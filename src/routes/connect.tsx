@@ -1,4 +1,4 @@
-import type {MetaFunction} from "@remix-run/node"
+import type {MetaFunction} from "@remix-run/cloudflare"
 
 import Connect from "~/components/Connect"
 import PageLayout from "~/components/PageLayout"

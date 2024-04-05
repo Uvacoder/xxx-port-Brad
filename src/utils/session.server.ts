@@ -1,4 +1,4 @@
-import {createCookieSessionStorage} from "@remix-run/node"
+import {createCookieSessionStorage} from "@remix-run/cloudflare"
 
 import type {Theme} from "~/types/theme"
 

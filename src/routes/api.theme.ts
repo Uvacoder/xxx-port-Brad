@@ -1,4 +1,4 @@
-import {type ActionFunctionArgs, json} from "@remix-run/node"
+import {type ActionFunctionArgs, json} from "@remix-run/cloudflare"
 
 import type {Theme} from "~/types/theme"
 import {setTheme} from "~/utils/session.server"

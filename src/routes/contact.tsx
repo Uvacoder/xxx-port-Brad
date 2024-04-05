@@ -1,4 +1,4 @@
-import type {MetaFunction} from "@remix-run/node"
+import type {MetaFunction} from "@remix-run/cloudflare"
 
 import Contact from "~/components/Contact"
 import Layout from "~/components/Layout"

@@ -1,5 +1,5 @@
 import {http} from "@bradgarropy/http"
-import {json} from "@remix-run/node"
+import {json} from "@remix-run/cloudflare"
 
 type ChannelStatus = {
     isLive: boolean

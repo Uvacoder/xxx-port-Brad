@@ -1,5 +1,5 @@
+import {installGlobals} from "@remix-run/cloudflare"
 import {vitePlugin as remix} from "@remix-run/dev"
-import {installGlobals} from "@remix-run/node"
 import react from "@vitejs/plugin-react"
 import {defineConfig} from "vite"
 import json5 from "vite-plugin-json5"

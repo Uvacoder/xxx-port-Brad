@@ -1,6 +1,6 @@
 import {http} from "@bradgarropy/http"
-import type {ActionFunctionArgs} from "@remix-run/node"
-import {json} from "@remix-run/node"
+import type {ActionFunctionArgs} from "@remix-run/cloudflare"
+import {json} from "@remix-run/cloudflare"
 
 export const action = async ({request}: ActionFunctionArgs) => {
     const {email} = await request.json()

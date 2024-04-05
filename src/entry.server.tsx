@@ -1,7 +1,7 @@
 import {PassThrough} from "node:stream"
 
-import type {EntryContext} from "@remix-run/node"
-import {createReadableStreamFromReadable} from "@remix-run/node"
+import type {EntryContext} from "@remix-run/cloudflare"
+import {createReadableStreamFromReadable} from "@remix-run/cloudflare"
 import {RemixServer} from "@remix-run/react"
 import {isbot} from "isbot"
 import {renderToPipeableStream} from "react-dom/server"
