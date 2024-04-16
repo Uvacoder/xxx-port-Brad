@@ -30,7 +30,7 @@ type Tier = {
 const getSponsors = async (): Promise<Sponsors> => {
     const octokit = graphql.defaults({
         headers: {
-            authorization: `Token ${process.env.GITHUB_TOKEN}`,
+            authorization: `Token ${process?.env?.GITHUB_TOKEN || ""}`,
         },
     })
 
