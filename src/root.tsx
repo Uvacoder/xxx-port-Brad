@@ -21,8 +21,10 @@ import {getTheme} from "~/utils/session.server"
 
 import pkg from "../package.json"
 
-export const loader = async ({request}: LoaderFunctionArgs) => {
-    const measurementId = process?.env?.GOOGLE_ANALYTICS_MEASUREMENT_ID || ""
+export const loader = async ({request, context}: LoaderFunctionArgs) => {
+    // TODO: FIX THIS
+    // const measurementId = process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID
+    const measurementId = ""
 
     const theme = await getTheme(request)
     return json({measurementId, theme})

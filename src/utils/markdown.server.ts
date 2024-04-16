@@ -61,7 +61,9 @@ const transformMarkdown = async (markdown: string): Promise<string> => {
             /* v8 ignore next 3 */
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-expect-error
-            process?.env?.VITEST ? remarkEmbedder : remarkEmbedder.default,
+            // TODO: FIX THIS
+            // process.env.VITEST ? remarkEmbedder : remarkEmbedder.default,
+            remarkEmbedder.default,
             {
                 transformers: [
                     codesandboxTransformer,

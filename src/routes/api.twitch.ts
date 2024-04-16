@@ -31,8 +31,11 @@ type TwitchChannel = {
 }
 
 export const loader = async () => {
-    const clientId = process?.env?.TWITCH_CLIENT_ID || ""
-    const clientSecret = process?.env?.TWITCH_CLIENT_SECRET || ""
+    // TODO: FIX THIS
+    // const clientId = process.env.TWITCH_CLIENT_ID
+    // const clientSecret = process.env.TWITCH_CLIENT_SECRET
+    const clientId = ""
+    const clientSecret = ""
 
     const {access_token} = await http.post<TwitchOauth>(
         `https://id.twitch.tv/oauth2/token?client_id=${clientId}&client_secret=${clientSecret}&grant_type=client_credentials`,

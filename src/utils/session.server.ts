@@ -12,7 +12,9 @@ const {getSession, commitSession} = createCookieSessionStorage<Session>({
         name: "bgTheme",
         path: "/",
         secure: true,
-        secrets: [process?.env?.SESSION_SECRET || ""],
+        // TODO: FIX THIS
+        // secrets: [process.env.SESSION_SECRET],
+        secrets: [""],
         sameSite: "lax",
     },
 })
